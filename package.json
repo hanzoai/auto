@@ -1,5 +1,5 @@
 {
-  "name": "activepieces",
+  "name": "@hanzo/auto",
   "version": "0.77.4",
   "rcVersion": "0.78.0-rc.0",
   "scripts": {
@@ -148,8 +148,7 @@
     "axios-retry": "4.4.1",
     "bcrypt": "6.0.0",
     "boring-avatars": "1.11.2",
-    "bullmq": "5.61.0",
-    "bullmq-otel": "1.0.1",
+    "@hanzo/mq": "^5.66.5",
     "canvas-confetti": "^1.9.4",
     "checkly": "6.1.1",
     "chokidar": "4.0.3",
@@ -203,6 +202,7 @@
     "i18next-icu": "2.3.0",
     "intercom-client": "6.2.0",
     "intl-messageformat": "10.5.14",
+    "@hanzo/kv-client": "^0.3.3",
     "ioredis": "5.4.1",
     "is-base64": "1.1.0",
     "isolated-vm": "5.0.1",

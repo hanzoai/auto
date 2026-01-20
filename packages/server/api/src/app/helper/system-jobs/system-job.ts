@@ -1,6 +1,6 @@
 import { apDayjs, apDayjsDuration } from '@activepieces/server-shared'
 import { assertNotNullOrUndefined, isNil, spreadIfDefined, tryCatch } from '@activepieces/shared'
-import { Job, JobsOptions, Queue, Worker } from 'bullmq'
+import { Job, JobsOptions, Queue, Worker } from '@hanzo/mq'
 import { FastifyBaseLogger } from 'fastify'
 import { redisConnections } from '../../database/redis-connections'
 import { JobSchedule, SystemJobData, SystemJobName, SystemJobSchedule } from './common'

@@ -1,7 +1,7 @@
 import { apAxios, AppSystemProp, exceptionHandler, QueueName, redisMetadataKey, RunsMetadataJobData, RunsMetadataQueueConfig, runsMetadataQueueFactory, RunsMetadataUpsertData } from '@activepieces/server-shared'
 import { assertNotNullOrUndefined, FlowRun, FlowRunStatus, isNil, PauseMetadata, PauseType, spreadIfDefined, WebsocketClientEvent } from '@activepieces/shared'
-import { Queue, Worker } from 'bullmq'
-import { BullMQOtel } from 'bullmq-otel'
+import { Queue, Worker } from '@hanzo/mq'
+// import { BullMQOtel } from 'bullmq-otel' // TODO: Integrate into @hanzo/mq
 import { FastifyBaseLogger } from 'fastify'
 import { websocketService } from '../../core/websockets.service'
 import { distributedLock, distributedStore, redisConnections } from '../../database/redis-connections'

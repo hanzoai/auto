@@ -1,5 +1,5 @@
 import { Flow, FlowId, FlowStatus, ProjectId } from '@activepieces/shared'
-import { Job, JobsOptions } from 'bullmq'
+import { Job, JobsOptions } from '@hanzo/mq'
 import { Dayjs } from 'dayjs'
 
 export enum SystemJobName {

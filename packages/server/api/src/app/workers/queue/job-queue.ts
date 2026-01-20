@@ -1,7 +1,7 @@
 import { apDayjsDuration, AppSystemProp, getPlatformQueueName, memoryLock, QueueName } from '@activepieces/server-shared'
 import { ApId, getDefaultJobPriority, isNil, JOB_PRIORITY } from '@activepieces/shared'
-import { Queue } from 'bullmq'
-import { BullMQOtel } from 'bullmq-otel'
+import { Queue } from '@hanzo/mq'
+// import { BullMQOtel } from 'bullmq-otel' // TODO: Integrate into @hanzo/mq
 import { FastifyBaseLogger } from 'fastify'
 import { redisConnections } from '../../database/redis-connections'
 import { dedicatedWorkers } from '../../ee/platform/platform-plan/platform-dedicated-workers'

@@ -1,5 +1,5 @@
 import { isNil, RATE_LIMIT_PRIORITY } from '@activepieces/shared'
-import { Queue } from 'bullmq'
+import { Queue } from '@hanzo/mq'
 import { FastifyBaseLogger } from 'fastify'
 import { redisConnections } from '../../../database/redis-connections'
 import { jobQueue } from '../job-queue'

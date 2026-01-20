@@ -10,8 +10,9 @@ import {
     RATE_LIMIT_PRIORITY,
     WorkerJobType,
 } from '@activepieces/shared'
-import { DelayedError, Worker } from 'bullmq'
-import { BullMQOtel } from 'bullmq-otel'
+import { DelayedError, Worker } from '@hanzo/mq'
+// TODO: Create @hanzo/mq-otel or integrate telemetry into @hanzo/mq
+// import { BullMQOtel } from 'bullmq-otel'
 import dayjs from 'dayjs'
 import { FastifyBaseLogger } from 'fastify'
 import { workerApiService } from '../api/server-api.service'

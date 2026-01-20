@@ -1,8 +1,9 @@
 import { apId, ApId, FlowRun as FlowRunSchema } from '@activepieces/shared'
 import { Static, Type } from '@sinclair/typebox'
 import { Value } from '@sinclair/typebox/value'
-import { Queue } from 'bullmq'
-import { BullMQOtel } from 'bullmq-otel'
+import { Queue } from '@hanzo/mq'
+// TODO: Create @hanzo/mq-otel or integrate telemetry into @hanzo/mq
+// import { BullMQOtel } from 'bullmq-otel'
 import Redis from 'ioredis'
 import { apDayjsDuration } from '../dayjs-helper'
 import { DistributedStore } from '../redis/distributed-store-factory'

@@ -1,5 +1,5 @@
 import { ExecuteFlowJobData, isNil, LATEST_JOB_DATA_SCHEMA_VERSION, WebhookJobData, WorkerJobType } from '@activepieces/shared'
-import { Job, Queue } from 'bullmq'
+import { Job, Queue } from '@hanzo/mq'
 import { FastifyBaseLogger } from 'fastify'
 import { redisConnections } from '../../../database/redis-connections'
 import { flowVersionRepo } from '../../../flows/flow-version/flow-version.service'

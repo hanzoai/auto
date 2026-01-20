@@ -1,6 +1,6 @@
 import { assertNotNullOrUndefined, ConsumeJobResponse, ConsumeJobResponseStatus, JobData, WorkerJobType } from '@activepieces/shared'
 import { context, propagation, trace } from '@opentelemetry/api'
-import { Job } from 'bullmq'
+import { Job } from '@hanzo/mq'
 import dayjs from 'dayjs'
 import { FastifyBaseLogger } from 'fastify'
 import { workerMachine } from '../utils/machine'
